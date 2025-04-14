@@ -1,0 +1,20 @@
+
+NOTE - think about how to apply just parts of this for new incremental bits of audio
+- only rerun detections/embeddings, but classify embeddings based on existing clusters
+- start with saving embeddings/detections into a temporary folder
+- aggregate within that folder
+- then, append that data onto existing compiled folder
+- then delete temporary folder 
+
+
+** TODO **
+File Management
+- separate renaming function from audio file splitting function
+- add code to SKIP cases where audio is already the correct length (99% of cases) 
+Big Scripts to Manage Everything
+- one for first ever pass, generating call type clusters
+- one for running initial version for a new dataset
+- one for running incremental version for new data from an existing site
+Clustering by Embedding
+- probably need to rework this a bit for efficiency
+- datatables?? to manage memory issues
