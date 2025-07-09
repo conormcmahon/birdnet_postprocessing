@@ -8,8 +8,8 @@ library(sf)
 
 # ******* CHANGE THESE PATHS for each use ******** 
 # Superdirectory containing directories for each recording site
-detections_directory <- "G:/Bioacoustics/Goleta_2024/detections/"
-output_directory <- "G:/Bioacoustics/Goleta_2024/detections_compiled/"
+detections_directory <- "G:/Bioacoustics/Sedgwick_2022_fall/detections/"
+output_directory <- "G:/Bioacoustics/Sedgwick_2022_fall/detections_compiled/"
 
 # Create the output directory if it doesn't already exist
 dir.create(file.path(output_directory), showWarnings = FALSE)
